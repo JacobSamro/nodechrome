@@ -20,7 +20,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install docker-ce docker-ce-cli containerd.io
           cd 10.15.1
-          VERSION=1.0.2
+          VERSION=node-10.15.1
           docker login --username jacobsamro --password ${{secrets.DOCKER_HUB_SECRET}}
           docker build . -t jacobsamro/nodecbse:$VERSION
           docker push jacobsamro/nodecbse:$VERSION
