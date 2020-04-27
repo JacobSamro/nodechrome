@@ -14,4 +14,3 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
   --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
-RUN yarn install && rm package.json
