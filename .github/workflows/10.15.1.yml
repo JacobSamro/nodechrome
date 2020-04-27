@@ -3,7 +3,7 @@ name: Deploy to DockerHub
 on:
   push:
     paths:
-      - '10.15.1'
+      - '10.15.1/**'
 
 jobs:
   build:
